@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8350686370328974800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ce967a8ad3c4aa9be7aa387316f2577, type: 3}
+  m_Name: SituationNodeModel
+  m_EditorClassIdentifier: 
+  Id: 093be5c12013c4faeaa8adc09e84e1ec
+  NodeName: SITUATION NAME
+  Inputs:
+  - {fileID: 8162704721556134492}
+  Outputs: []
+  Position: {x: 240, y: 46.5}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd62e5ab64145fea900513464f9d14c, type: 3}
+  m_Name: '#EventGraphDatabase'
+  m_EditorClassIdentifier: 
+  models:
+  - {fileID: 8162704721556134492}
+  - {fileID: -8350686370328974800}
+--- !u!114 &8162704721556134492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 003ba54192434b84a2d0d8b4a6990095, type: 3}
+  m_Name: StartNodeModel
+  m_EditorClassIdentifier: 
+  Id: 5eeb851b8fa904314a1bc4cd4066fe6d
+  NodeName: 
+  Inputs: []
+  Outputs:
+  - {fileID: -8350686370328974800}
+  Position: {x: 113, y: 107}
